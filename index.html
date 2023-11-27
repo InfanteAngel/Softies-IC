@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Softies</title>
+    <link rel="stylesheet" href="./resources/CSS/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/488766d18c.js" crossorigin="anonymous"></script>
+</head>
+<body class="primary-font">
+    <header class="primary-header">
+        <div class="primary-nav bg-pastel-pink">
+            <div class="nav-wrapper">
+                <a href="#"><img id="softies-lgo"src="./resources/Images/Softies.png" alt="softies ice cream logo"></a>
+                <button class="mobile-nav-toggle" aria-controls="primary-navigation">
+                    <i class="fa-solid fa-bars" aria-hidden="true"></i>
+                    <i class="fa-solid fa-x icon-close" aria-hiddnen="true"></i>
+                    <span class="visually-hidden">Menu</span>
+                </button>
+                <nav class="primary-navigation" id="primary-navigation" aria-expanded="false">
+                    <ul aria-label="primary-navigation" role="list" class="nav-list">
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="carrers.html">Careers</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li class="lastLi"><a>VIP</a></li>
+                        <li><a id="navInsta" href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a id="navTik" href="#"><i class="fa-brands fa-tiktok"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="image-header">
+            <h1 id="tagline">Indulge In Bliss.</h1>
+            <img id="row-icecream" src="./resources/Images/row_IC.jpg" alt="row of ice cream">
+        </div>
+    </header>
+
+    <main>
+        <section class="mang-section | bg-sand-clr | padding-block-600">
+            <div class="container">
+                <div class="even-columns">
+                    <!--                    <div>
+                        <p>Limited Time</p>
+                    </div> -->
+
+                    <div class="text-container ">
+                        <h1 class="header-text">La Mangonada</h1>
+                        <p class="sub-text">Expierence the perfect belnd of ripe, juicy mangoes. A hint of chili and a splash of lime. Try our mangonada today 
+                            and let your taste buds dance with delight!
+                        </p>
+                        <button id="mango-btn" class="sub-text | btn"><a>Yes Please!</a></button>
+                    </div>
+                    <div class="img-container">
+                        <img class="img-rounded" id="mang-img" src="./resources/Images/mangonada.jpg" alt="Mangonada">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="about-section | ">
+            <div class="about-container padding-block-900">
+                <div class="even-columns container">
+                    <div class="text-container about-text">
+                        <h1 class="header-text">About Us</h1>
+                        <p class="sub-text">From a small 10 minute buisness idea to a loved and cherished Ice Cream shop. Read about how Softies became just an
+                            icebreaker, to a reality. Where every chapter is a new flavor waiting to be savored.
+                        </p>
+                        <button id="about-btn" class="sub-text"><a href="about.html">Discover More...</a></button>
+                    </div>
+    
+                </div>
+            </div>
+        </section>
+
+        <section class="second-nav | bg-sand-clr padding-block-600">
+            <div class="container">
+                <div class="even-columns">
+                    <button class="sub-text | col-btn"><a>Hours</a></button>
+                    <button class="sub-text | col-btn"><a>Catering</a></button>
+                </div>
+                <div class="even-columns">
+                    <button class="sub-text | col-btn"><a>Catering</a></button>
+                    <button class="sub-text | col-btn"><a>Special Events</a></button>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <img src="./resources/Images/rainbow_IC_img.jpg" alt="">
+            </div>
+        </section>
+    
+
+
+
+    </main>
+
+    <footer class="bg-pastel-pink">
+        <div class="container">
+            <div class="even-columns">
+                <div>
+                    <img  id="logo-footer"  src="./resources/Images/Softies.png" alt="Softies Ice Cream Footer Logo">
+                    <ul role="list" aria-label="social links">
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
+                    </ul>
+                </div>
+                <div>
+                    <nav class="footer-nav">
+                        <ul aria-label="footer" role="list">
+                            <li>About</li>
+                            <li>Careers</li>
+                            <li>Contact</li>
+                            <li>Menu</li>
+                            <li>Membership</li>
+                            <li>Our Shop</li>
+                            <li>Faq</li>
+                        </ul>
+                    </nav>
+                </div>
+                <div>
+                    <form action="">
+                        <input type="email"><button class="button">Go</button>
+                        <p>Copyright 2023. All Rights Reserved</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script type="module" src="./resources/JS/script.js"></script>
+</body>
+</html>

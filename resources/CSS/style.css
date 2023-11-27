@@ -1,0 +1,631 @@
+/*Variables */
+
+:root{
+    
+    --sand-clr: #FFF6EA;
+    --pastel-pink-clr: #E6AACE;
+    --powder-white--clr: #F0F4EF;
+
+    --yellow-clr: #FFDD4C;
+    --dark-clr: #0D1821;
+    --indgo-clr: #344966;
+    --green-clr: #BFCC94;
+    --black: #000000;
+
+    --ff-primary: 'Bebas Neue', sans-serif;
+
+
+    --fs-300: 0.8125rem;
+    --fs-400: 0.938rem;
+    --fs-600: 1rem;
+    --fs-700: 1.25rem;
+    --fs-800: 1.813rem;
+    --fs-900: 2.375rem;
+    --fs-950: 4rem;
+    --fs-980: 5rem;
+    --fs-1000: 9rem; 
+
+    --fw-light: 200;
+    --fw-regular: 400;
+    --fw-semi-bold: 500;
+    --fw-bold: 700;
+
+    --fs-body: var(--fs-600);
+    --fs-primary-heading: var(--fs-900);
+
+    --size-100: .25rem;
+    --size-200: .5rem;
+    --size-300: .75rem;
+    --size-400: 1rem;
+    --size-500: 1.5rem;
+    --size-600: 2rem;
+    --size-700: 3rem;
+    --size-800: 4rem;
+    --size-900: 5rem;
+
+
+}
+
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+html,
+body{
+    height: 100%;
+}
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body, h1, h2, h3, h4, p,
+figure, blockquote, dl, dd {
+  margin-block-end: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1, h2, h3, h4,
+button, input, label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1, h2,
+h3, h4 {
+  text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+svg,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+}
+    
+    /* Track */
+    ::-webkit-scrollbar-track {
+    background: var(--powder-white--clr);
+}
+    
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+    background: var(--pastel-pink-clr);
+}
+
+
+
+
+
+
+
+
+/******************************************************/
+
+/*General Styling */
+
+
+a{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+#softies-lgo{
+    width: 5rem;
+    height: 5rem;
+    margin-left: var(--size-200);
+    float: left;
+}
+
+.primary-nav{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.primary-navigation ul{
+    float: right;
+    margin-right: 1rem;
+}
+
+.primary-nav a:hover{
+    cursor: pointer;
+    box-shadow: 0px 2px 0px 0px var(--black);
+}
+
+.primary-navigation li{
+    display: inline-block;
+    margin-top: 1.7rem;
+    margin-left: var(--size-700);
+    font-size: var(--fs-700);
+}
+
+
+
+.lastLi{
+    margin-right: var(--size-500);
+}
+
+.image-header{
+    position: relative;
+    text-align: center;
+    z-index: -1;
+}
+
+#tagline{
+    position: absolute;
+    top: 25%;
+    left: 42%;
+    transform: translate(-25%, -42%);
+    font-size: var(--fs-950);
+    animation: expandSpace 1s forwards;
+}
+
+/* Navigation */
+
+
+@keyframes expandSpace{
+    to{
+        letter-spacing: 10px;
+    }
+}
+
+#tagline-menu{
+    position: absolute;
+    top: 40%;
+    left: 45.5%;
+    transform: translate(-25%, -40%);
+    font-size: var(--fs-950);
+    letter-spacing: 10px;
+}
+
+main h1{
+    font-size: var(--fs-900);
+}
+
+#mang-img{
+    height: 28rem;
+    width: 20rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.about-container{
+    background-image: url("../Images/about_yellow_img.jpg");
+    background-size: cover ;
+    background-position-y: 20%;
+}
+
+.about-text{
+    margin-top: 0rem;
+}
+
+#about-btn{
+    margin-top: 1vh;
+    border-bottom: solid 2px var(--black);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: transparent;
+}
+
+.col-btn{
+    background-color: var(--yellow-clr);
+    padding: var(--size-300);
+    width: 20vw;
+    border-radius: 30px;
+    border: none;
+    margin-inline: auto;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    box-shadow: 1px 2px #b59e36;
+}
+
+
+#logo-footer{
+    width: 6em;
+    height: 6em;
+}
+
+.footer-nav li{
+    display: grid;
+    grid-auto-flow: column;
+
+}
+
+.menu-image-header{
+    background-image:url("../Images/menu_img.jpg");
+    background-size: cover ;
+    background-position-y: 20%;
+    padding-block: 19rem;
+}
+
+
+
+.img-rounded{
+    height: 28rem;
+    width: 20rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.button-section-container{
+    margin-top: 3vh;
+}
+
+.button-section-container button{
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 2px solid var(--black);
+}
+
+/* About Page */
+
+.about-image-header{
+    background-image:url("../Images/about_yellow_img.jpg");
+    background-size: cover ;
+    background-position-y: 20%;
+    padding-block: 19rem;
+}
+
+#tagline-about{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: var(--fs-950);
+    letter-spacing: 10px;
+    text-align: center;
+}
+
+/* Carrer Page */
+
+.carrers-image-header{
+    background-image:url("../Images/IC_shop.jpg");
+    background-size: cover ;
+    background-position-y: 5%;
+    padding-block: 19rem;
+}
+
+#carrers-tagline{
+    position: absolute;
+    top: 40%;
+    left: 42.5%;
+    transform: translate(-25%, -40%);
+    font-size: var(--fs-950);
+    letter-spacing: 10px;
+}
+
+/* Contact Page */
+
+.contact-image-header{
+    background-image:url("../Images/life_is_amazing.jpg");
+    background-size: cover ;
+    background-position-y: 23%;
+    padding-block: 17rem;
+}
+
+
+
+@media (min-width: 37em){
+    .primary-navigation li{
+        margin-left: var(--size-500);
+    }
+    
+}
+
+@media (max-width: 50em){
+    .primary-navigation{
+        display: none;
+        position: fixed;
+        max-width: 25rem;
+        background-color: var(--pastel-pink-clr);
+        padding-bottom: 50em;
+        padding-right: 2rem;
+        margin-left: 26rem;
+        margin-top: 5rem;
+    }
+
+    .primary-header[data-overlay]::before{
+        content: "";
+        position: fixed;
+        inset: 0;
+    }
+    
+
+    .mobile-nav-toggle .icon-close{
+        display: none;
+    }
+
+    .primary-navigation[data-visible]{
+        display: block;
+    }
+
+    .nav-list{
+        display: grid;
+        text-align: center;
+    }
+
+    .lastLi{
+        margin-right: 0;
+    }
+
+
+    .nav-list a{
+        text-decoration: none;
+    }
+
+    .fa-brands{
+        display: none;
+    }
+
+    .mobile-nav-toggle{
+        display: block;
+        position: fixed;
+        top: .8rem;
+        font-size: 1.8rem;
+        right: var(--size-400);
+        cursor: pointer;
+        background: transparent;
+        border: 0;
+        padding: 0.5em;
+    }
+
+}
+
+@media (min-width: 90em){
+    #tagline{
+        font-size: var(--fs-1000);
+    }
+
+    #tagline-menu{
+        font-size: var(--fs-1000);
+        letter-spacing: 10px;
+    }
+
+
+
+}
+
+
+/* Utility Classes */
+
+.visually-hidden{
+    position: absolute;
+    position: absolute ;
+    width: 1px ;
+    height: 1px ;
+    padding: 0 ;
+    margin: -1px ;
+    overflow: hidden ;
+    clip: rect(0,0,0,0) ;
+    white-space: nowrap ;
+    border: 0 ;
+}
+
+
+
+.fc-primary{
+    color: var(--black);
+}
+
+.bg-sand-clr{
+    background-color: var(--sand-clr);
+}
+
+.bg-pastel-pink{
+    background-color: var(--pastel-pink-clr);
+}
+
+.bg-indigo-pastel{
+    background-color: var(--indgo-clr);
+}
+
+.bg-yellow{
+    background-color: var(--yellow-clr);
+}
+
+.bg-green{
+    background-color: var(--green-clr);
+}
+
+.centerText{
+    text-align: center;
+}
+
+.fw-semi-bold{ font-weight: var(--fw-semi-bold);}
+.fw-bold{ font-weight: var(--fw-bold);}
+.fw-regular{ font-weight: var(--fw-regular);}
+.fw-light{ font-weight: var(--fw-light);}
+
+.fs-300{ font-size: var(--fs-300);}
+.fs-400{ font-size: var(--fs-400);}
+.fs-500{ font-size: var(--fs-500);}
+.fs-600{ font-size: var(--fs-600);}
+.fs-700{ font-size: var(--fs-700);}
+.fs-800{ font-size: var(--fs-800);}
+.fs-980{ font-size: var(--fs-980)}
+.fs-1000{font-size: var(--fs-1000);}
+
+.padding-block-600{
+    padding-block: var(--size-600);
+}
+
+.padding-block-900{
+    padding-block: var(--size-900);
+}
+
+.padding-block-200{
+    padding-block: var(--size-200);
+}
+
+.primary-font{
+    font-family: var(--ff-primary);
+}
+
+.header-text{
+    font-size: var(--fs-980);
+    letter-spacing: --;
+}
+
+.subheader-text{
+    font-size: var(--fs-800);
+}
+
+.sub-text{
+    font-size: var(--fs-700);
+    font-weight: var(--fw-regular);
+}
+
+.container{
+    --max-width: 1110px;
+    --padding: 1rem;
+  
+    width: min(var(--max-width), 100% - (var(--padding) * 2));
+    margin-inline: auto;
+}
+
+.even-columns{
+    display: grid;
+    grid-auto-flow: column ;
+    grid-auto-columns: 1fr;
+    gap: 10.5rem;
+}
+
+
+.text-container{
+    margin-top: 2rem;
+    padding-left: 1rem;
+    max-width: 30rem;
+    margin-bottom: 2rem;
+}
+
+.img-container{
+    margin-left: 8rem;
+}
+
+.about-container{
+    margin-inline: auto;
+}
+
+.selected{
+    box-shadow: 0px 2px 0px 0px var(--black);
+    color: var(--black);
+}
+
+.btn{
+    background-color: var(--yellow-clr);
+    padding: var(--size-200);
+    width: 10vw;
+    margin-top: 5vh;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 1px 2px #b59e36;
+}
+
+.seperator{
+    background-color: var(--yellow-clr);
+    text-align: center;
+    letter-spacing: .2em;
+}
+
+
+.sizes-section{
+    margin-top: 3vh;
+}
+
+.sizes-list li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 2em;
+}
+
+.sizes-list li p{
+    text-align: center;
+    margin-top: .4em;
+}
+
+
+
+.sm-Ic{
+    font-size: var(--size-400);
+    display: grid;
+    justify-content: center;
+}
+
+.md-Ic{
+    font-size: var(--size-500);    
+    display: grid;
+    justify-content: center;
+    
+}
+
+.lg-Ic{
+    font-size: var(--size-600);
+    display: grid;
+    justify-content: center;
+}
+
+
+
+@media (min-width: 50em){
+    .display-md-inline-flex{
+      display: inline-flex;
+    }
+  }
+  
+  
