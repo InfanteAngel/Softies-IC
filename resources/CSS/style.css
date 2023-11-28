@@ -21,6 +21,7 @@
     --fs-700: 1.25rem;
     --fs-800: 1.813rem;
     --fs-900: 2.375rem;
+    --fs-930: 3rem;
     --fs-950: 4rem;
     --fs-980: 5rem;
     --fs-1000: 9rem; 
@@ -176,6 +177,7 @@ button:hover{
     z-index: 1;
 }
 
+
 .primary-navigation ul{
     float: right;
     margin-right: 1rem;
@@ -291,7 +293,6 @@ main h1{
     background-image:url("../Images/menu_img.jpg");
     background-size: cover ;
     background-position-y: 20%;
-    padding-block: 19rem;
 }
 
 
@@ -357,88 +358,6 @@ main h1{
     background-size: cover ;
     background-position-y: 23%;
     padding-block: 17rem;
-}
-
-
-
-@media (min-width: 37em){
-    .primary-navigation li{
-        margin-left: var(--size-500);
-    }
-    
-}
-
-@media (max-width: 50em){
-    .primary-navigation{
-        display: none;
-        position: fixed;
-        max-width: 25rem;
-        background-color: var(--pastel-pink-clr);
-        padding-bottom: 50em;
-        padding-right: 2rem;
-        margin-left: 26rem;
-        margin-top: 5rem;
-    }
-
-    .primary-header[data-overlay]::before{
-        content: "";
-        position: fixed;
-        inset: 0;
-    }
-    
-
-    .mobile-nav-toggle .icon-close{
-        display: none;
-    }
-
-    .primary-navigation[data-visible]{
-        display: block;
-    }
-
-    .nav-list{
-        display: grid;
-        text-align: center;
-    }
-
-    .lastLi{
-        margin-right: 0;
-    }
-
-
-    .nav-list a{
-        text-decoration: none;
-    }
-
-    .fa-brands{
-        display: none;
-    }
-
-    .mobile-nav-toggle{
-        display: block;
-        position: fixed;
-        top: .8rem;
-        font-size: 1.8rem;
-        right: var(--size-400);
-        cursor: pointer;
-        background: transparent;
-        border: 0;
-        padding: 0.5em;
-    }
-
-}
-
-@media (min-width: 90em){
-    #tagline{
-        font-size: var(--fs-1000);
-    }
-
-    #tagline-menu{
-        font-size: var(--fs-1000);
-        letter-spacing: 10px;
-    }
-
-
-
 }
 
 
@@ -513,6 +432,10 @@ main h1{
     padding-block: var(--size-200);
 }
 
+.image-padding{
+    padding-block: 19rem;
+}
+
 .primary-font{
     font-family: var(--ff-primary);
 }
@@ -556,6 +479,7 @@ main h1{
 
 .img-container{
     margin-left: 8rem;
+    margin-top: 1.5rem;
 }
 
 .about-container{
@@ -626,6 +550,122 @@ main h1{
     .display-md-inline-flex{
       display: inline-flex;
     }
-  }
-  
+
+    .mobile-nav-toggle{
+        display: none;
+    }
+}
+
+@media (max-width: 48em){
+    .primary-navigation{
+        display: none;
+        position: fixed;
+        background-color: var(--pastel-pink-clr);
+        padding-bottom: 50em;
+    }
+
+
+    .primary-header[data-overlay]::before{
+        content: "";
+        position: fixed;
+        inset: 0;
+    }
+    
+
+    .mobile-nav-toggle .icon-close{
+        display: none;
+    }
+
+    .primary-navigation[data-visible]{
+        display: block;
+    }
+
+    .nav-list{
+        display: grid;
+    }
+
+    .lastLi{
+        margin-right: 0;
+    }
+
+
+    .nav-list a{
+        text-decoration: none;
+    }
+
+    .fa-brands{
+        display: none;
+    }
+
+    .mobile-nav-toggle{
+        display: block;
+        position: fixed;
+        top: .8rem;
+        font-size: 1.8rem;
+        right: var(--size-400);
+        cursor: pointer;
+        background: transparent;
+        border: 0;
+        padding: 0.5em;
+    }
+}
+
+@media(max-width: 69.375em){
+
+    .header-text{
+        font-size: var(--fs-950);
+    }
+
+    #tagline{
+        top: 25%;
+        left: 41%;
+        transform: translate(-25%, -41%);
+        font-size: var(--fs-930);
+    }
+
+    #tagline-menu{
+        top: 40%;
+        left: 45.5%;
+        transform: translate(-25%, -40%);
+        font-size: var(--fs-930);
+    }
+
+    #tagline-about{
+        font-size: var(--fs-930);
+    }
+
+    #carrers-tagline{
+        font-size: var(--fs-930);
+    }
+
+    .btn{
+        width: 13vw;
+    }
+
+
+    .text-container{
+        margin-top: 2rem;
+        padding-left: 1rem;
+        max-width: 50rem;
+    }
+
+    .even-columns{
+        grid-column-gap: 0;
+    }
+
+
+    #mang-img, #vanilla-IC, #gelato, #greek-yg{
+        width: 90%;
+        height: auto;
+    }
+
+    
+    .img-container{
+        margin-left: 5rem;
+    }
+
+    
+
+
+}
   
