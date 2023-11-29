@@ -21,7 +21,7 @@
     --fs-700: 1.25rem;
     --fs-800: 1.813rem;
     --fs-900: 2.375rem;
-    --fs-930: 3rem;
+    --fs-930: 3.4rem;
     --fs-950: 4rem;
     --fs-980: 5rem;
     --fs-1000: 9rem; 
@@ -154,6 +154,7 @@ textarea:not([rows]) {
 
 /*General Styling */
 
+/* Landing Page */
 
 a{
     cursor: pointer;
@@ -207,18 +208,23 @@ button:hover{
     z-index: -1;
 }
 
+
+
+.main-header-container{
+    background-image: url("../Images/row_IC.jpg");
+    background-size: cover ;
+    background-position-y: 20%;
+}
+
+
 #tagline{
-    position: absolute;
-    top: 25%;
-    left: 42%;
-    transform: translate(-25%, -42%);
-    font-size: var(--fs-950);
+    font-size: var(--fs-980);
     animation: expandSpace 1s forwards;
+    letter-spacing: 0px;
+    margin-top: -12rem;
 }
 
 /* Navigation */
-
-
 @keyframes expandSpace{
     to{
         letter-spacing: 10px;
@@ -226,12 +232,9 @@ button:hover{
 }
 
 #tagline-menu{
-    position: absolute;
-    top: 40%;
-    left: 45.5%;
-    transform: translate(-25%, -40%);
-    font-size: var(--fs-950);
+    font-size: var(--fs-980);
     letter-spacing: 10px;
+    margin-top: -12rem;
 }
 
 main h1{
@@ -320,17 +323,13 @@ main h1{
     background-image:url("../Images/about_yellow_img.jpg");
     background-size: cover ;
     background-position-y: 20%;
-    padding-block: 19rem;
 }
 
 #tagline-about{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: var(--fs-950);
+    font-size: var(--fs-930);
     letter-spacing: 10px;
     text-align: center;
+    margin-top: -12rem;
 }
 
 /* Carrer Page */
@@ -339,16 +338,12 @@ main h1{
     background-image:url("../Images/IC_shop.jpg");
     background-size: cover ;
     background-position-y: 5%;
-    padding-block: 19rem;
 }
 
 #carrers-tagline{
-    position: absolute;
-    top: 40%;
-    left: 42.5%;
-    transform: translate(-25%, -40%);
-    font-size: var(--fs-950);
+    font-size: var(--fs-980);
     letter-spacing: 10px;
+    margin-top: -12rem;
 }
 
 /* Contact Page */
@@ -357,7 +352,42 @@ main h1{
     background-image:url("../Images/life_is_amazing.jpg");
     background-size: cover ;
     background-position-y: 23%;
-    padding-block: 17rem;
+    padding-block: 24rem;
+}
+
+.flow * + * {
+    margin-top: var(--flow-spacer, 3em);
+}
+
+:where(.flow :not(:first-child)){
+    margin-top: var(--flow-spacer, 3em);
+}
+
+.form-even-columns{
+    display: grid;
+    grid-auto-flow: column ;
+    grid-auto-columns: 1fr;
+}
+
+.even-row{
+    display: grid;
+    grid-auto-flow: row ;
+    grid-auto-columns: 1fr;
+}
+
+#fName, #lName{
+    width: 100%;
+    height: 8vh;
+}
+
+
+
+#email, #subject{
+    height: 8vh;
+}
+
+#message{
+    height: 15vh;
 }
 
 
@@ -442,7 +472,6 @@ main h1{
 
 .header-text{
     font-size: var(--fs-980);
-    letter-spacing: --;
 }
 
 .subheader-text{
@@ -545,25 +574,22 @@ main h1{
 }
 
 
-
-@media (min-width: 50em){
-    .display-md-inline-flex{
-      display: inline-flex;
-    }
-
-    .mobile-nav-toggle{
-        display: none;
-    }
+.mobile-nav-toggle, .icon-close{
+    display: none;
 }
 
-@media (max-width: 48em){
+
+
+
+/*Mobile Large | Column to row change | anything below 768px*/
+@media (max-width: 36.875em){
+
     .primary-navigation{
         display: none;
         position: fixed;
         background-color: var(--pastel-pink-clr);
         padding-bottom: 50em;
     }
-
 
     .primary-header[data-overlay]::before{
         content: "";
@@ -610,39 +636,93 @@ main h1{
     }
 }
 
-@media(max-width: 69.375em){
-
-    .header-text{
-        font-size: var(--fs-950);
+/* Tablet Media 768px - 1024px*/
+@media (max-width: 48em){
+    .primary-navigation{
+        display: none;
+        position: fixed;
+        background-color: var(--pastel-pink-clr);
+        padding-bottom: 50em;
     }
 
+
+
+    .primary-header[data-overlay]::before{
+        content: "";
+        position: fixed;
+        inset: 0;
+    }
+    
+
+    .mobile-nav-toggle .icon-close{
+        display: none;
+    }
+
+    .primary-navigation[data-visible]{
+        display: block;
+    }
+
+    .nav-list{
+        display: grid;
+    }
+
+    .lastLi{
+        margin-right: 0;
+    }
+
+
+    .nav-list a{
+        text-decoration: none;
+    }
+
+    .fa-brands{
+        display: none;
+    }
+
+    .mobile-nav-toggle{
+        display: block;
+        position: fixed;
+        top: .8rem;
+        font-size: 1.8rem;
+        right: var(--size-400);
+        cursor: pointer;
+        background: transparent;
+        border: 0;
+        padding: 0.5em;
+    }
+
+        
     #tagline{
-        top: 25%;
-        left: 41%;
-        transform: translate(-25%, -41%);
-        font-size: var(--fs-930);
+        font-size: var(--fs-980);
     }
 
     #tagline-menu{
-        top: 40%;
-        left: 45.5%;
-        transform: translate(-25%, -40%);
-        font-size: var(--fs-930);
+        font-size: var(--fs-980);
     }
 
     #tagline-about{
-        font-size: var(--fs-930);
+        font-size: var(--fs-980);
+    }
+}
+
+/* Desktop Display| 1024px - 1440px*/
+@media (min-width: 64em){
+        
+    #tagline{
+        font-size: var(--fs-980);
     }
 
-    #carrers-tagline{
-        font-size: var(--fs-930);
+    #tagline-menu{
+        font-size: var(--fs-980);
     }
 
-    .btn{
-        width: 13vw;
+    #tagline-about{
+        font-size: var(--fs-980);
     }
-
-
+}
+  
+/* Image Break */
+@media (max-width: 69.5em){
     .text-container{
         margin-top: 2rem;
         padding-left: 1rem;
@@ -655,7 +735,7 @@ main h1{
 
 
     #mang-img, #vanilla-IC, #gelato, #greek-yg{
-        width: 90%;
+        width: 80%;
         height: auto;
     }
 
@@ -664,8 +744,55 @@ main h1{
         margin-left: 5rem;
     }
 
+    .btn{
+        width: 13vw;
+    }
     
+}
 
+/* Header image Static */
+@media(max-width: 76.875em){
+    .main-header-container{
+        background-size: cover;
+        background-position-x: 50%;
+    }
+
+    .menu-image-header{
+        background-image:url("../Images/menu_img.jpg");
+        background-size: cover ;
+        background-position-x: 50%;
+    }
+
+    .carrers-image-header{
+        background-image:url("../Images/IC_shop.jpg");
+        background-size: cover ;
+        background-position-x: 50%;
+    }
+    
+}
+
+/* Larger Desktops |  1440px and above */
+@media (min-width: 90em){
+    
+    #tagline{
+        font-size: var(--fs-1000);
+    }
+
+    #tagline-menu{
+        font-size: var(--fs-1000);
+    }
+
+    #tagline-about{
+        font-size: var(--fs-1000);
+    }
+
+    .main-header-container{
+        background-image: url("../Images/row_IC.jpg");
+        background-size: cover ;
+        background-position-y: 40%;
+    }
 
 }
-  
+
+
+
