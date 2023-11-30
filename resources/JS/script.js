@@ -2,6 +2,7 @@ const navToggle = document.querySelector(".mobile-nav-toggle");
 const mobileNav = document.querySelector(".mobile-navigation");
 const toggle = document.querySelector(".mobile-nav-toggle");
 
+
 if (mobileNav.getAttribute("aria-expanded") == "false"){
     mobileNav.setAttribute("style", "display: none");
 }
@@ -20,4 +21,4 @@ function toggleMobile(){
         console.log("Aria expanded set to false")
     }
 }
-document.addEventListener("click", toggleMobile)
+toggle.addEventListener("click", toggleMobile)
