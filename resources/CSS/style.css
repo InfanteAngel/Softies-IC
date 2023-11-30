@@ -160,6 +160,7 @@ textarea:not([rows]) {
 a{
     cursor: pointer;
     text-decoration: none;
+    color: var(--black);
 }
 
 button:hover{
