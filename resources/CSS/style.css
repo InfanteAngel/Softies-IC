@@ -43,6 +43,7 @@
     --size-700: 3rem;
     --size-800: 4rem;
     --size-900: 5rem;
+    --size-1000: 11.3rem;
 
 
 }
@@ -259,6 +260,7 @@ main h1{
     margin-top: 0rem;
 }
 
+
 #about-btn{
     margin-top: 1vh;
     border-bottom: solid 2px var(--black);
@@ -266,6 +268,7 @@ main h1{
     border-left: none;
     border-right: none;
     background-color: transparent;
+    min-width: 80px;
 }
 
 .col-btn{
@@ -278,6 +281,7 @@ main h1{
     margin-top: 2vh;
     margin-bottom: 2vh;
     box-shadow: 1px 2px #b59e36;
+    min-width: 80px;
 }
 
 
@@ -319,10 +323,37 @@ main h1{
 
 /* About Page */
 
+.even-columns-about{
+    display: grid;
+    grid-auto-flow: column ;
+    grid-auto-columns: 1fr;
+    gap: 10.5rem;
+    align-items: center;
+}
+
 .about-image-header{
     background-image:url("../Images/about_yellow_img.jpg");
     background-size: cover ;
     background-position-y: 20%;
+}
+
+.text-offset{
+    box-shadow: 0px 0px 0px 0px var(--indgo-clr);
+    background-color: var(--sand-clr);
+    color: var(--dark-clr);
+    padding: 1rem;
+    animation: box-swap 2s forwards;
+    animation-delay: 2s;
+    margin-left: -1rem;
+    margin-top: -1rem;
+}
+
+@keyframes box-swap{
+    to{
+        box-shadow: -20px -20px 0px 5px var(--indgo-clr);
+        margin-left: 0;
+        margin-top: 0;
+    }
 }
 
 #tagline-about{
@@ -330,6 +361,10 @@ main h1{
     letter-spacing: 10px;
     text-align: center;
     margin-top: -12rem;
+}
+
+.about-img{
+    border-radius: 10px;
 }
 
 /* Carrer Page */
@@ -357,6 +392,7 @@ main h1{
 
 .flow * + * {
     margin-top: var(--flow-spacer, 3em);
+    border: 1px solid red;
 }
 
 :where(.flow :not(:first-child)){
@@ -377,18 +413,94 @@ main h1{
 
 #fName, #lName{
     width: 100%;
-    height: 8vh;
+    height: 3rem;
 }
-
 
 
 #email, #subject{
-    height: 8vh;
+    height: 3rem;
 }
 
 #message{
-    height: 15vh;
+    height: 7rem;
 }
+
+
+
+/* VIP Page */
+
+.even-columns-vip{
+    display: grid;
+    grid-auto-flow: column ;
+    grid-auto-columns: 1fr;
+    align-items: center;
+}
+
+
+
+
+.vip-box{
+    background-color: var(--black);
+    color: var(--powder-white--clr);
+    height: 40rem;
+    width: 30rem;
+    margin-inline: auto;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0px 0px 0px 0px var(--pastel-pink-clr);
+}
+
+.vip-box h1 {
+    background-color: var(--yellow-clr);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    color: var(--black);
+}
+
+
+.vip-box:hover{
+    animation: hoverBlur 1s forwards;
+}
+
+
+
+@keyframes hoverBlur{
+    to{
+        box-shadow: 0px 0px 30px 0px var(--pastel-pink-clr);
+    }
+}
+
+.advert-list{
+    margin-top: 5rem;
+}
+
+.advert-list li{
+    margin-top: 30px;
+    font-size: var(--fs-800);
+    list-style: none;
+}
+
+.fee{
+    margin-inline: auto;
+    vertical-align: middle;
+    color: var(--powder-white--clr);
+    border-bottom: 4px solid;
+}
+
+.btn-advert{
+    background-color: var(--yellow-clr);
+    padding: var(--size-200);
+    width: 10vw;
+    margin-top: 6rem;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 1px 2px #b59e36;
+    min-width: 80px;
+}
+
+
 
 
 /* Utility Classes */
@@ -462,6 +574,9 @@ main h1{
     padding-block: var(--size-200);
 }
 
+.padding-block-1000{
+    padding-block: var(--size-1000);
+}
 .image-padding{
     padding-block: 19rem;
 }
@@ -528,7 +643,9 @@ main h1{
     border-radius: 10px;
     border: none;
     box-shadow: 1px 2px #b59e36;
+    min-width: 80px;
 }
+
 
 .seperator{
     background-color: var(--yellow-clr);
@@ -584,6 +701,28 @@ main h1{
 /*Mobile Large | Column to row change | anything below 768px*/
 @media (max-width: 36.875em){
 
+    .even-columns{
+        grid-auto-flow: row;
+        gap: 1rem;
+    }
+
+    .text-container{
+        text-align: center;
+    }
+
+    .col-btn{
+        width: 10rem;
+        margin-top: 0;
+    }
+
+    .header-text{
+        font-size: var(--fs-930);
+    }
+
+    .sub-text{
+        font-size: var(--fs-300);
+    }
+
     .primary-navigation{
         display: none;
         position: fixed;
@@ -628,12 +767,45 @@ main h1{
         position: fixed;
         top: .8rem;
         font-size: 1.8rem;
-        right: var(--size-400);
+        right: 5px;
         cursor: pointer;
         background: transparent;
         border: 0;
         padding: 0.5em;
     }
+
+    .even-columns-vip{
+        display: grid;
+        grid-auto-flow: row ;
+        grid-auto-columns: 1fr;
+        gap: 5rem;
+        align-items: center;
+    }
+
+    /* Vip Box Resize */
+
+    .vip-box{
+        width: 20rem;
+        height: 30rem;
+    }
+
+    .vip-box h1{
+        width: 20rem;
+    }
+
+    .advert-list{
+        margin-top: 1rem;
+    }
+
+    .btn-advert{
+        margin-top: 1rem;
+    }
+
+
+
+
+
+    
 }
 
 /* Tablet Media 768px - 1024px*/
@@ -703,6 +875,44 @@ main h1{
     #tagline-about{
         font-size: var(--fs-980);
     }
+
+    #carrers-tagline{
+        font-size: var(--fs-980);
+    }
+    
+}
+
+@media (max-width: 65em){
+    .even-columns-vip{
+        display: grid;
+        grid-auto-flow: row ;
+        grid-auto-columns: 1fr;
+        gap: 5rem;
+        align-items: center;
+    }
+
+    /* Vip Box Resize */
+
+    .vip-box{
+        width: 20rem;
+        height: 30rem;
+    }
+
+    .vip-box h1{
+        width: 20rem;
+    }
+
+    .advert-list{
+        margin-top: 1rem;
+    }
+
+    .btn-advert{
+        margin-top: 1rem;
+    }
+
+
+
+
 }
 
 /* Desktop Display| 1024px - 1440px*/
@@ -719,6 +929,35 @@ main h1{
     #tagline-about{
         font-size: var(--fs-980);
     }
+
+    #carrers-tagline{
+        font-size: var(--fs-980);
+    }
+
+    /* Vip Box Resize */
+
+    .vip-box{
+        width: 20rem;
+        height: 30rem;
+    }
+
+    .vip-box h1{
+        width: 20rem;
+    }
+
+    .advert-list{
+        margin-top: 1rem;
+    }
+
+    .btn-advert{
+        margin-top: 1rem;
+    }
+
+    .img-container{
+        margin-left: 0;
+    }
+
+
 }
   
 /* Image Break */
@@ -741,11 +980,16 @@ main h1{
 
     
     .img-container{
-        margin-left: 5rem;
+        --max-width: 1110px;
+        --padding: 1rem;
+      
+        width: min(var(--max-width), 100% - (var(--padding) * 2));
+        margin-inline: auto;
     }
 
     .btn{
         width: 13vw;
+        min-width: 80px;
     }
     
 }
@@ -768,7 +1012,19 @@ main h1{
         background-size: cover ;
         background-position-x: 50%;
     }
-    
+
+    .contact-image-header{
+        background-image:url("../Images/life_is_amazing.jpg");
+        background-size: cover ;
+        background-position-x: 50%;
+    }
+
+    .about-image-header{
+        background-image:url("../Images/about_yellow_img.jpg");
+        background-size: cover ;
+        background-position-x: 50%;
+    }
+        
 }
 
 /* Larger Desktops |  1440px and above */
@@ -786,11 +1042,44 @@ main h1{
         font-size: var(--fs-1000);
     }
 
+    #carrers-tagline{
+        font-size: var(--fs-1000);
+    }
+
+
     .main-header-container{
         background-image: url("../Images/row_IC.jpg");
         background-size: cover ;
         background-position-y: 40%;
     }
+
+    
+    .carrers-image-header{
+        background-image:url("../Images/IC_shop.jpg");
+        background-size: cover ;
+        background-position-y: 20%;
+    }
+
+
+    .contact-image-header{
+        background-image:url("../Images/life_is_amazing.jpg");
+        background-size: cover ;
+        background-position-y: 23%;
+    }
+
+    .menu-image-header{
+        background-image:url("../Images/menu_img.jpg");
+        background-size: cover ;
+        background-position-y: 40%;
+    }
+
+    .about-image-header{
+        background-image:url("../Images/about_yellow_img.jpg");
+        background-size: cover ;
+        background-position-y: 40%;
+    }
+
+
 
 }
 

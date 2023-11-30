@@ -13,21 +13,27 @@
     <script src="https://kit.fontawesome.com/488766d18c.js" crossorigin="anonymous"></script>
 </head>
 <body class="primary-font">
-    
     <header class="primary-header">
         <div class="primary-nav bg-pastel-pink">
-            <nav class="primary-navigation">
+            <div class="nav-wrapper">
                 <a  href="index.html"><img id="softies-lgo" src="./resources/Images/Softies.png" alt="softies ice cream logo"></a>
-                <ul aria-label="primary-navigation" role="list" class="nav-list">
-                    <li><a href="#" class="selected">Menu</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="carrers.html">Careers</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li class="lastLi"><a>VIP</a></li>
-                    <li><a id="navInsta" href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                    <li><a id="navTik" href="#"><i class="fa-brands fa-tiktok"></i></a></li>
-                </ul>
-            </nav>
+                <button class="mobile-nav-toggle" aria-controls="primary-navigation">
+                    <i class="fa-solid fa-bars" aria-hidden="true"></i>
+                    <i class="fa-solid fa-x icon-close" aria-hiddnen="true"></i>
+                    <span class="visually-hidden">Menu</span>
+                </button>
+                <nav class="primary-navigation" id="primary-navigation" aria-expanded="false">
+                    <ul aria-label="primary-navigation" role="list" class="nav-list">
+                        <li><a href="#" class="selected">Menu</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="carrers.html">Careers</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li class="lastLi"><a href="vip.html">VIP</a></li>
+                        <li><a id="navInsta" href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a id="navTik" href="#"><i class="fa-brands fa-tiktok"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
         <div class="menu-image-header | image-padding">
             <section class="padding-block-900">
@@ -307,6 +313,19 @@
                     <div class="img-container">
                         <img class="img-rounded" id="gelato" src="./resources/Images/frozen-yogurt.jpg" alt="">
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="second-nav | bg-sand-clr padding-block-600">
+            <div class="container">
+                <div class="even-columns">
+                    <button class="sub-text | col-btn"><a>Hours</a></button>
+                    <button class="sub-text | col-btn"><a>Catering</a></button>
+                </div>
+                <div class="even-columns">
+                    <button class="sub-text | col-btn"><a>Catering</a></button>
+                    <button class="sub-text | col-btn"><a>Special Events</a></button>
                 </div>
             </div>
         </section>
