@@ -738,6 +738,10 @@ main h1{
       gap: var(--size-700);
     }
 
+    .footerList, .footer-form{
+        gap: inherit;
+    }
+
   }
 
 #logo-footer{
@@ -1003,7 +1007,7 @@ div[data-shrink="shrink-pad"]{
 }
 
 #fName, #lName{
-    width: auto;
+    width: 80%;
     height: 3rem;
 }
 
@@ -1137,7 +1141,7 @@ div[data-shrink="shrink-pad"]{
 
 @keyframes expandBox {
     to{
-        height: 8rem;
+        height: 7rem;
     }
 }
 
