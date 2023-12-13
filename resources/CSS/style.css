@@ -726,8 +726,8 @@ main h1{
         padding-top: 1rem;
     }
 
-    .footerList{
-        outline: 2px solid red;
+    .footerList li a{
+        font-size: 1.3rem;
     }
   }
   
