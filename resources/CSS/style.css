@@ -1534,6 +1534,11 @@ a{
     color: var(--black);
 }
 
+a:link{
+    color: var(--black);
+    text-decoration: none;
+}
+
 
 
 
