@@ -60,11 +60,11 @@ a:link, button:link{
 }
 
 button{
-    color: var(--black);
+    color: inherit;
 }
 
 a{
-    color: var(--black);
+    color: inherit;
 }
 
 /* Box sizing rules */
@@ -2047,8 +2047,4 @@ a{
         gap: 10rem;
     }
 
-}
-
-*{
-    color: var(--black);
 }
