@@ -766,6 +766,7 @@ main h1{
 .social-list{
     display: flex;
     gap: var(--size-400);
+    row-gap: var(--size-400);
 }
 
 .social-list li{
@@ -1915,7 +1916,7 @@ a{
 
     #mang-img, #vanilla-IC, #shaved-IC, #gelato, #greek-yg{
         width: auto;
-        height: 100%;
+        height: inherit;
     }
 
     .limited-time{
