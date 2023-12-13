@@ -707,7 +707,7 @@ main h1{
 }
 
 .footerList, .footer-form{
-    gap: 1rem;
+    padding-top: 2rem;
 }
 
 .copy-right, input{
@@ -723,8 +723,7 @@ main h1{
     
     .footerList, .footer-form{
         gap: 2rem;
-        padding-top: .5rem;
-        padding-bottom: .5rem;
+        padding-top: 1rem;
     }
 
     .footerList{
