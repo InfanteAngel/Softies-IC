@@ -16,27 +16,8 @@
     <header class="primary-header">
         <div class="primary-nav bg-pastel-pink">
             <div class="nav-wrapper">
-                <a  href="index.html"><img id="softies-lgo" src="./resources/Images/Softies.png" alt="softies ice cream logo"></a>
-                <button class="mobile-nav-toggle" aria-controls="primary-navigation">
-                    <i class="fa-solid fa-bars" aria-hidden="true"></i>
-                    <i class="fa-solid fa-x icon-close" aria-hiddnen="true"></i>
-                    <span class="visually-hidden">Menu</span>
-                </button>
-
-                <nav class="mobile-navigation" id="mobile-nav" aria-expanded="false">
-                    <ul aria-label="mobile-primary-navigation" id="mobile-primary-navigation" role="list" class="mobile-primary-nav">
-                        <li><a href="menu.html">Menu</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="carrers.html">Careers</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li class="lastLi"><a href="vip.html">VIP</a></li>
-                        <div class="even-columns-socials">
-                            <li><a id="navInsta" href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                            <li><a id="navTik" href="#"><i class="fa-brands fa-tiktok"></i></a></li>
-                        </div>
-                    </ul>
-                </nav>
-
+                <a href="./index.html" class="softies-text-logo" aria-hidden="true">Softies</a>
+                <a href="./index.html" class="logo-wrapper"><img id="softies-lgo"src="./resources/Images/Softies.png" alt="softies ice cream logo"></a>
                 <nav class="primary-navigation" id="primary-navigation" aria-expanded="false">
                     <ul aria-label="primary-navigation" role="list" class="nav-list">
                         <li><a href="menu.html">Menu</a></li>
@@ -50,27 +31,53 @@
                 </nav>
             </div>
         </div>
+
+        <!-- Mobile Navigation-->
+
+        <div class="mobile-nav" aria-hidden="true">
+            <div class="nav-wrapper">
+                <a href="#" class="softies-text-logo-mob">Softies</a>
+                <a href="#" class="logo-wrapper"><img id="softies-lgo"src="./resources/Images/Softies.png" alt="softies ice cream logo"></a>
+                <button class="mobile-nav-toggle" aria-controls="primary-navigation">
+                    <i class="fa-solid fa-bars" aria-hidden="true"></i>
+                    <i class="fa-solid fa-x icon-close" aria-hidden="true"></i>
+                    <span class="visually-hidden">Menu</span>
+                </button>
+                <nav class="mobile-navigation" id="mobile-nav" aria-expanded="false">
+                    <ul aria-label="mobile-primary-navigation" id="mobile-primary-navigation" role="list" class="mobile-primary-nav">
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="carrers.html">Careers</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li class="lastLi"><a href="vip.html">VIP</a></li>
+                        <div class="even-columns-socials">
+                            <li><a id="navInsta" href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a id="navTik" href="#"><i class="fa-brands fa-tiktok"></i></a></li>
+                        </div>
+                    </ul>
+                </nav>
+            </div>
+        </div>
         <div class="contact-image-header">
             <h1 id="tagline-about"></h1>
         </div>
     </header>
 
     <main>
-        <section class="padding-block-900 | bg-pastel-pink">
+        <section class="padding-block-900 | bg-pastel-pink" id="contactSection">
             <div class="container">
                 <div class="even-columns">
-                    <div>
+                    <div class="contact-us-section">
                         <h1 class="header-text">Contact Us</h1>
                         <h3 class="subheader-text">Address</h3>
-                        <p></p>
+                        <p>4877 Fairmont Parkway 77034</p>
                         <h3 class="subheader-text">Phone</h3>
-                        <p></p>
+                        <p>584-646-3993</p>
                         <h3 class="subheader-text">Additional Questions?</h3>
-                        <p class="sub-text">Please visit our FAQ or reach out via the form provided.</p>
+                        <p>Please visit our <a class="selected" href="./about.html#faqSection">FAQ</a> or reach out via the form provided.</p>
                     </div>
                     <div>
-                        <p class="sub-text">Name</p>
-                        <form action="">
+                        <form action="" class="contactForm">
                             <div class="form-even-columns">
                                 <div>
                                     <label for="fName" class="sub-text">First Name</label>
@@ -88,7 +95,7 @@
                                     <input type="text" id="lName" name="lname">
                                 </div>
                             </div>
-                            <div class="even-row">
+                            <div class="even-row form-contact">
                                 <label for="email" class="sub-text">Email</label>
                                 <input type="email" id="email" name="email">
                                 <label for="subject" class="sub-text">Subject</label>
@@ -103,15 +110,45 @@
             </div>
         </section>
 
+        <section class=" catering-section | padding-block-900 " id="cateringSection">
+            <div class="container">
+                <div class="even-columns">
+                    <div>
+                        <h1 class="centerText header-text">Catering</h1>
+                        <div class="sub-text container">
+                            <p>
+                                We offer all sorts of catering services from parties, to get togethers or any event you consider special enough
+                                for Softies to make it even better. From classic flavors to innovative delights, our catering service brings the joy of creamy,
+                                delightful treats to your events. Elevate any ocassion with the cool allure of our 
+                                hadncrafted ice creams.
+                            </p>
+                            <p class="centerText">
+                                Please leave an email in order to get in touch with you as soon as possible.
+                            </p>
+                            
+                            <div class="centerText padding-block-600 catering-submit">
+                                <form action="" class="catering-form" id ="form" onsubmit="validate(event)">
+                                    <label for="email">Email</label>
+                                    <p id="errorText" class="visually-hidden">Invalid Email!</p>
+                                    <input type="text" id="data" placeholder="email@company.com">
+                                    <button class="cater-btn" type="submit">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </section>
+
         <section class="second-nav | bg-sand-clr padding-block-600">
             <div class="container">
                 <div class="even-columns">
-                    <button class="sub-text | col-btn"><a>Hours</a></button>
-                    <button class="sub-text | col-btn"><a>Catering</a></button>
+                    <button class="sub-text | col-btn"><a href="./about.html#hoursBlock">Hours</a></button>
+                    <button class="sub-text | col-btn"><a href="./contact.html#cateringSection">Catering</a></button>
                 </div>
                 <div class="even-columns">
-                    <button class="sub-text | col-btn"><a>Catering</a></button>
-                    <button class="sub-text | col-btn"><a>Special Events</a></button>
+                    <button class="sub-text | col-btn"><a href="./about.html#faqSection">FAQ</a></button>
+                    <button class="sub-text | col-btn"><a href="./about.html#shopSection">Our Shop</a></button>
                 </div>
             </div>
         </section>
@@ -127,32 +164,38 @@
 
     <footer class="bg-pastel-pink">
         <div class="container">
-            <div class="even-columns">
-                <div>
+            <div class="primary-footer-wrapper">
+                <div class="footer-icons-section">
                     <img  id="logo-footer"  src="./resources/Images/Softies.png" alt="Softies Ice Cream Footer Logo">
-                    <ul role="list" aria-label="social links">
-                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                        <li><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
-                    </ul>
+                    <div>
+                        <ul role="list" aria-label="social links" class="social-list">
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
+                        </ul>
+                    </div>
                 </div>
                 <div>
-                    <nav class="footer-nav">
+                    <nav class="footer-nav | footerList">
                         <ul aria-label="footer" role="list">
-                            <li>About</li>
-                            <li>Careers</li>
-                            <li>Contact</li>
-                            <li>Menu</li>
-                            <li>Membership</li>
-                            <li>Our Shop</li>
-                            <li>Faq</li>
+                            <li><a href="menu.html">Menu</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="carrers.html">Careers</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li class="lastLi"><a href="vip.html">VIP</a></li>
+                            <li><a href="./about.html#shopSection">Our Shop</a></li>
+                            <li><a href="./about.html#faqSection">Faq</a></li>
                         </ul>
                     </nav>
                 </div>
-                <div>
+                <div class="footer-form">
                     <form action="">
-                        <input type="email"><button class="button">Go</button>
-                        <p>Copyright 2023. All Rights Reserved</p>
+                        <input type="email" data-type = >
+                        <button class="button" data-type="form-button">Go</button>
+                        <p id="newsletter">Sign Up For Our Newsletter Today!</p>
                     </form>
+                    <div class="copy-right">
+                        <p>Copyright 2023. All Rights Reserved</p>
+                    </div>
                 </div>
             </div>
         </div>

@@ -14,29 +14,10 @@
 </head>
 <body class="primary-font">
     <header class="primary-header">
-        <div class="primary-nav bg-pastel-pink">
+        <div class="primary-nav">
             <div class="nav-wrapper">
-                <a  href="index.html"><img id="softies-lgo" src="./resources/Images/Softies.png" alt="softies ice cream logo"></a>
-                <button class="mobile-nav-toggle" aria-controls="primary-navigation">
-                    <i class="fa-solid fa-bars" aria-hidden="true"></i>
-                    <i class="fa-solid fa-x icon-close" aria-hiddnen="true"></i>
-                    <span class="visually-hidden">Menu</span>
-                </button>
-
-                <nav class="mobile-navigation" id="mobile-nav" aria-expanded="false">
-                    <ul aria-label="mobile-primary-navigation" id="mobile-primary-navigation" role="list" class="mobile-primary-nav">
-                        <li><a href="menu.html">Menu</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="carrers.html">Careers</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li class="lastLi"><a href="vip.html">VIP</a></li>
-                        <div class="even-columns-socials">
-                            <li><a id="navInsta" href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                            <li><a id="navTik" href="#"><i class="fa-brands fa-tiktok"></i></a></li>
-                        </div>
-                    </ul>
-                </nav>
-
+                <a href="./index.html" class="softies-text-logo" aria-hidden="true">Softies</a>
+                <a href="./index.html" class="logo-wrapper"><img id="softies-lgo"src="./resources/Images/Softies.png" alt="softies ice cream logo"></a>
                 <nav class="primary-navigation" id="primary-navigation" aria-expanded="false">
                     <ul aria-label="primary-navigation" role="list" class="nav-list">
                         <li><a href="menu.html">Menu</a></li>
@@ -50,20 +31,46 @@
                 </nav>
             </div>
         </div>
+
+        <!-- Mobile Navigation-->
+
+        <div class="mobile-nav" aria-hidden="true">
+            <div class="nav-wrapper">
+                <a href="./index.html" class="softies-text-logo-mob">Softies</a>
+                <a href="./index.html" class="logo-wrapper"><img id="softies-lgo"src="./resources/Images/Softies.png" alt="softies ice cream logo"></a>
+                <button class="mobile-nav-toggle" aria-controls="primary-navigation">
+                    <i class="fa-solid fa-bars" aria-hidden="true"></i>
+                    <i class="fa-solid fa-x icon-close" aria-hidden="true"></i>
+                    <span class="visually-hidden">Menu</span>
+                </button>
+                <nav class="mobile-navigation" id="mobile-nav" aria-expanded="false">
+                    <ul aria-label="mobile-primary-navigation" id="mobile-primary-navigation" role="list" class="mobile-primary-nav">
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="carrers.html">Careers</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li class="lastLi"><a href="vip.html">VIP</a></li>
+                        <div class="even-columns-socials">
+                            <li><a id="navInsta" href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a id="navTik" href="#"><i class="fa-brands fa-tiktok"></i></a></li>
+                        </div>
+                    </ul>
+                </nav>
+            </div>
+        </div>
         <div class="about-image-header | image-padding">
-            <section>
+            <section class="padding-block-900">
                 <div>
-                    <h1 class="centerText"  id="tagline-about">Read about how Softies became just an
-                        icebreaker, to a reality.</h1>
+                    <h1 class="centerText"  id="tagline-about">From an ICEBREAKER to a Reality</h1>
                 </div>
             </section>
         </div>
     </header>
 
     <main>
-        <section class="padding-block-900 | bg-yellow">
-            <div class="container">
-                <div class="even-columns-about">
+        <section class="padding-block-900 | bg-yellow" id="aboutUs">
+            <div class="container padding-block-600">
+                <div class="even-columns">
                     <div class="container-text text-offset">
                         <p class="sub-text">
                             Softies came to be thanks to a 10 minute group discussion. During a carrer day, a small group of tennagers
@@ -79,15 +86,191 @@
             </div>
         </section>
 
+        <section class="our-shop-section padding-block-900 | bg-sand-clr">
+            <div class="container">
+                <div class="even-columns-shop">
+                    <div class="shop-textBox padding-block-600 bg-yellow" id="shopSection">
+                        <div class="container" data-shrink = "shrink-pad">
+                            <h1 class="header-text">Our Shop</h1>
+                            <div class="sub-text">
+                                <p>
+                                    Established in 2012, our local ice cream shop has been a belovd fixture in the community for nearly three decades.
+                                    Founded by a passionate ice cream enthusiats, the shop started as a humble familty venture, churning out small
+                                    batches of homemade goodness. Over the years its has grown into a cherished gathering spot, known for its commitment
+                                    to quality ingredients and inventive flavors.
+                                </p>
+                                <br>
+                                <p>
+                                    Over the years, our dedication to quality and innovative flavors has garned a loyal following, turning our huble shop into a 
+                                    cherished destination for ice cream aficionados. From quaint beginnings to a delightful local institution, our journey has been
+                                    marked by scoops of joy and legacy sweet memories.
+                                    Today, our ice cream shop continues to serve joy in a cone, celebrating the legacy of that initial scoop of happiness shsared with the 
+                                    community.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shop-img">
+                        <img src="./resources/Images/bench-sjop.jpg" alt="bench ice cream shop">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="hours-section | padding-block-600 | bg-indigo-pastel">
+            <div class="container | centerText padding-block-600 hours-wrapper"  id="hoursBlock">
+                <div class="even-columns">
+                    <div class="hours">
+                        <h1 class="header-text">Buisness Hours</h1>
+                        <br>
+                         <h2 class="subheader-text">Monday - Thursday</h2>
+                         <p class="subheader-text">9:00am - 10:00pm</p>
+                         <h4 class="sub-text">Friday - Sunday</h4>
+                         <p class="sub-text">9:00am - 12:00pm</p>
+                         <br>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section | padding-block-900 bg-yellow" id="faqSection">
+            <div class="even-columns-faq container" >
+                <div>
+                    <h1 class="faq-title centerText">FAQ</h1>
+                </div>
+                <div class="even-rows-faq">
+
+                    <div class="faq-inter">
+                        <hr class="hr-light">
+                        <div class="faq-column">
+                            <ul>
+                                <li><p>How do I buy your ice cream?</p></li>
+                                <li class="faq-controls">
+                                    <button class="faq-toggle" aria-controls="faq-controls" >
+                                        <i id="plus1" class="fa-solid fa-plus" aria-expanded="false"></i>
+                                        <span class="visually-hidden">Menu</span>
+                                    </button>
+                                </li>
+                            </ul>
+                            <div class="faq-textbox" id="textBox1" aria-expanded="false">  
+                                <p class="textContent" id="text-content-1" aria-expanded="false">
+                                    You can visit our Softies Shop for freshly spun scoops, pints, gelato, shaved ice cream and more! You can also order online for pickup or delivery in Pasadena. We look forward to serving you!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-inter">
+                        <div class="faq-column">
+                            <ul>
+                                <li><p>Is your ice cream pasteurized?</p></li>
+                                <li class="faq-controls">
+                                    <button class="faq-toggle" aria-controls="faq-controls" >
+                                        <i id="plus2" class="fa-solid fa-plus" aria-expanded="false"></i>
+                                        <span class="visually-hidden">Menu</span>
+                                    </button>
+                                </li>
+                            </ul>
+                            <div class="faq-textbox" id="textBox2" aria-expanded="false">  
+                                <p class="textContent" id="text-content-2" aria-expanded="false">
+                                    For sure! Believe it or not, all ice cream in the US must be made with a pasteurized base mix in order to be legally sold:)
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-inter">
+                        <div class="faq-column">
+                            <ul>
+                                <li><p>Can I request a flavor?</p></li>
+                                <li class="faq-controls">
+                                    <button class="faq-toggle" aria-controls="faq-controls" >
+                                        <i id="plus3" class="fa-solid fa-plus" aria-expanded="false"></i>
+                                        <span class="visually-hidden">Menu</span>
+                                    </button>
+                                </li>
+                            </ul>
+                            <div class="faq-textbox" id="textBox3" aria-expanded="false">  
+                                <p class="textContent" id="text-content-3" aria-expanded="false">
+                                    We love Panna fan requests. Shoot us an email sofites@softiesIceCream.com to tell us what to bring back or what your dream flavor is.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-inter">
+                        <div class="faq-column">
+                            <ul>
+                                <li><p>Does your ice cream contain eggs?</p></li>
+                                <li class="faq-controls">
+                                    <button class="faq-toggle" aria-controls="faq-controls" >
+                                        <i id="plus4" class="fa-solid fa-plus" aria-expanded="false"></i>
+                                        <span class="visually-hidden">Menu</span>
+                                    </button>
+                                </li>
+                            </ul>
+                            <div class="faq-textbox" id="textBox4" aria-expanded="false">  
+                                <p class="textContent" id="text-content-4" aria-expanded="false">
+                                    Most of our ice creams are dairy only, and do not contain eggs. If an ice cream does contain eggs, we will list it with an (e) to let you know. And while we’re on the topic of allergens: if it contains nuts, you’ll see a (n) and if it contains gluten, a (g).
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-inter">
+                        <div class="faq-column">
+                            <ul>
+                                <li><p>Do you carry vegan flavors?</p></li>
+                                <li class="faq-controls">
+                                    <button class="faq-toggle" aria-controls="faq-controls" >
+                                        <i id="plus5" class="fa-solid fa-plus" aria-expanded="false"></i>
+                                        <span class="visually-hidden">Menu</span>
+                                    </button>
+                                </li>
+                            </ul>
+                            <div class="faq-textbox" id="textBox5" aria-expanded="false">  
+                                <p class="textContent" id="text-content-5" aria-expanded="false">
+                                    We make a killer chocolate sorbet that is purely Amano chocolate, cocoa, water, and sugar. We also feature regular seasonal fruit sorbets. No plant milk bases here, though. 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-inter">
+                        <div class="faq-column">
+                            <ul>
+                                <li><p>Do you ship nationwide?</p></li>
+                                <li class="faq-controls">
+                                    <button class="faq-toggle" aria-controls="faq-controls" >
+                                        <i id="plus6" class="fa-solid fa-plus" aria-expanded="false"></i>
+                                        <span class="visually-hidden">Menu</span>
+                                    </button>
+                                </li>
+                            </ul>
+                            <div class="faq-textbox" id="textBox6" aria-expanded="false">  
+                                <p class="textContent" id="text-content-6" aria-expanded="false">
+                                    We do! Check out goldbelly.com and search for us there. We rotate our 6-pack of pints every 5 weeks. That way, our nationwide Softies family can enjoy the fun of changing flavors just like our Pasadena neighbors!  
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                   
+                </div>
+            </div>
+        </section>
+
         <section class="second-nav | bg-sand-clr padding-block-600">
             <div class="container">
                 <div class="even-columns">
-                    <button class="sub-text | col-btn"><a>Hours</a></button>
-                    <button class="sub-text | col-btn"><a>Catering</a></button>
+                    <button class="sub-text | col-btn"><a href="./about.html#hoursBlock">Hours</a></button>
+                    <button class="sub-text | col-btn"><a href="./contact.html#cateringSection">Catering</a></button>
                 </div>
                 <div class="even-columns">
-                    <button class="sub-text | col-btn"><a>Catering</a></button>
-                    <button class="sub-text | col-btn"><a>Special Events</a></button>
+                    <button class="sub-text | col-btn"><a href="./about.html#faqSection">FAQ</a></button>
+                    <button class="sub-text | col-btn"><a href="./about.html#shopSection">Our Shop</a></button>
                 </div>
             </div>
         </section>
@@ -102,35 +285,42 @@
 
     <footer class="bg-pastel-pink">
         <div class="container">
-            <div class="even-columns">
-                <div>
+            <div class="primary-footer-wrapper">
+                <div class="footer-icons-section">
                     <img  id="logo-footer"  src="./resources/Images/Softies.png" alt="Softies Ice Cream Footer Logo">
-                    <ul role="list" aria-label="social links">
-                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                        <li><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
-                    </ul>
+                    <div>
+                        <ul role="list" aria-label="social links" class="social-list">
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
+                        </ul>
+                    </div>
                 </div>
                 <div>
-                    <nav class="footer-nav">
+                    <nav class="footer-nav | footerList">
                         <ul aria-label="footer" role="list">
-                            <li>About</li>
-                            <li>Careers</li>
-                            <li>Contact</li>
-                            <li>Menu</li>
-                            <li>Membership</li>
-                            <li>Our Shop</li>
-                            <li>Faq</li>
+                            <li><a href="menu.html">Menu</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="carrers.html">Careers</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li class="lastLi"><a href="vip.html">VIP</a></li>
+                            <li><a href="./about.html#shopSection">Our Shop</a></li>
+                            <li><a href="./about.html#faqSection">Faq</a></li>
                         </ul>
                     </nav>
                 </div>
-                <div>
+                <div class="footer-form">
                     <form action="">
-                        <input type="email"><button class="button">Go</button>
-                        <p>Copyright 2023. All Rights Reserved</p>
+                        <input type="email" data-type = >
+                        <button class="button" data-type="form-button">Go</button>
+                        <p id="newsletter">Sign Up For Our Newsletter Today!</p>
                     </form>
+                    <div class="copy-right">
+                        <p>Copyright 2023. All Rights Reserved</p>
+                    </div>
                 </div>
             </div>
         </div>
     </footer>
     <script type="module" src="./resources/JS/script.js"></script>
+    <script type="module" src="./resources/JS/about.js"></script>
 </body>

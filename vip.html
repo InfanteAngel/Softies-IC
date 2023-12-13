@@ -16,13 +16,34 @@
     <header class="primary-header">
         <div class="primary-nav bg-pastel-pink">
             <div class="nav-wrapper">
-                <a  href="index.html"><img id="softies-lgo" src="./resources/Images/Softies.png" alt="softies ice cream logo"></a>
+                <a href="./index.html"class="softies-text-logo" aria-hidden="true">Softies</a>
+                <a href="./index.html"class="logo-wrapper"><img id="softies-lgo"src="./resources/Images/Softies.png" alt="softies ice cream logo"></a>
+                <nav class="primary-navigation" id="primary-navigation" aria-expanded="false">
+                    <ul aria-label="primary-navigation" role="list" class="nav-list">
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="carrers.html">Careers</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li class="lastLi"><a href="vip.html" class="selected">VIP</a></li>
+                        <li><a id="navInsta" href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a id="navTik" href="#"><i class="fa-brands fa-tiktok"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        
+        <!-- Mobile Navigation-->
+
+        <div class="mobile-nav" aria-hidden="true">
+            <div class="nav-wrapper">
+                <a href="#" class="softies-text-logo-mob">Softies</a>
+                <a href="#" class="logo-wrapper"><img id="softies-lgo"src="./resources/Images/Softies.png" alt="softies ice cream logo"></a>
                 <button class="mobile-nav-toggle" aria-controls="primary-navigation">
                     <i class="fa-solid fa-bars" aria-hidden="true"></i>
-                    <i class="fa-solid fa-x icon-close" aria-hiddnen="true"></i>
+                    <i class="fa-solid fa-x icon-close" aria-hidden="true"></i>
                     <span class="visually-hidden">Menu</span>
                 </button>
-
                 <nav class="mobile-navigation" id="mobile-nav" aria-expanded="false">
                     <ul aria-label="mobile-primary-navigation" id="mobile-primary-navigation" role="list" class="mobile-primary-nav">
                         <li><a href="menu.html">Menu</a></li>
@@ -34,18 +55,6 @@
                             <li><a id="navInsta" href="#"><i class="fa-brands fa-instagram"></i></a></li>
                             <li><a id="navTik" href="#"><i class="fa-brands fa-tiktok"></i></a></li>
                         </div>
-                    </ul>
-                </nav>
-
-                <nav class="primary-navigation" id="primary-navigation" aria-expanded="false">
-                    <ul aria-label="primary-navigation" role="list" class="nav-list">
-                        <li><a href="menu.html">Menu</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="carrers.html">Careers</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li class="lastLi"><a href="vip.html" class="selected">VIP</a></li>
-                        <li><a id="navInsta" href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                        <li><a id="navTik" href="#"><i class="fa-brands fa-tiktok"></i></a></li>
                     </ul>
                 </nav>
             </div>
@@ -65,44 +74,65 @@
                 <button class="btn-advert">Buy Now!</button>
             </div>
             <div class="fee">
-                <h1 class="header-text">10$/month <br> Membership!</h1>
+                <h1 class="header-text">10$/month <br> Membership</h1>
             </div>
         </div>
         <div class="terms-conditions centerText padding-block-600 container bg-sand-clr">
             <h2 class="sub-text">Terms & Conditions</h2>
             <br>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque iure at reiciendis soluta illum iusto aut veniam ut possimus excepturi! Perferendis in totam commodi numquam ratione nesciunt suscipit ex dolorem?</p>
+            <div class="container">
+                <p>Please refer to the Supplemental Terms page to view the separate terms governing the participation in the Loyalty Program by the applicable experience or property for information on what features of the Loyalty Program are available.</p>
+            </div>
         </div>
     </main>
 
-    <footer class="bg-pastel-pink">
+    <section class="second-nav | bg-sand-clr padding-block-600">
         <div class="container">
             <div class="even-columns">
-                <div>
+                <button class="sub-text | col-btn"><a href="./about.html#hoursBlock">Hours</a></button>
+                <button class="sub-text | col-btn"><a href="./contact.html#cateringSection">Catering</a></button>
+            </div>
+            <div class="even-columns">
+                <button class="sub-text | col-btn"><a href="./about.html#faqSection">FAQ</a></button>
+                <button class="sub-text | col-btn"><a href="./about.html#shopSection">Our Shop</a></button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-pastel-pink">
+        <div class="container">
+            <div class="primary-footer-wrapper">
+                <div class="footer-icons-section">
                     <img  id="logo-footer"  src="./resources/Images/Softies.png" alt="Softies Ice Cream Footer Logo">
-                    <ul role="list" aria-label="social links">
-                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                        <li><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
-                    </ul>
+                    <div>
+                        <ul role="list" aria-label="social links" class="social-list">
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
+                        </ul>
+                    </div>
                 </div>
                 <div>
-                    <nav class="footer-nav">
+                    <nav class="footer-nav | footerList">
                         <ul aria-label="footer" role="list">
-                            <li>About</li>
-                            <li>Careers</li>
-                            <li>Contact</li>
-                            <li>Menu</li>
-                            <li>Membership</li>
-                            <li>Our Shop</li>
-                            <li>Faq</li>
+                            <li><a href="menu.html">Menu</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="carrers.html">Careers</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li class="lastLi"><a href="vip.html">VIP</a></li>
+                            <li><a href="./about.html#shopSection">Our Shop</a></li>
+                            <li><a href="./about.html#faqSection">Faq</a></li>
                         </ul>
                     </nav>
                 </div>
-                <div>
+                <div class="footer-form">
                     <form action="">
-                        <input type="email"><button class="button">Go</button>
-                        <p>Copyright 2023. All Rights Reserved</p>
+                        <input type="email" data-type = >
+                        <button class="button" data-type="form-button">Go</button>
+                        <p id="newsletter">Sign Up For Our Newsletter Today!</p>
                     </form>
+                    <div class="copy-right">
+                        <p>Copyright 2023. All Rights Reserved</p>
+                    </div>
                 </div>
             </div>
         </div>
