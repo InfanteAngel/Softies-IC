@@ -707,7 +707,7 @@ main h1{
 }
 
 .footerList, .footer-form{
-    margin-top: 1.8rem;
+    gap: 1rem;
 }
 
 .copy-right, input{
@@ -722,7 +722,7 @@ main h1{
     }
     
     .footerList, .footer-form{
-        margin-top: 0;
+        gap: inherit;
     }
   }
   
@@ -1137,7 +1137,7 @@ div[data-shrink="shrink-pad"]{
 
 @keyframes expandBox {
     to{
-        height: 5rem;
+        height: 8rem;
     }
 }
 
@@ -1672,6 +1672,22 @@ a{
     .limited-time{
         display: none;
     }
+
+    
+.faq-inter p{
+    font-size: var(--fs-100);
+}
+
+
+.faq-column li{
+    display: inline-block;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
+.faq-column li p{
+    font-size: 1.4rem;
+}
 
 }
 
