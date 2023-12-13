@@ -1534,7 +1534,7 @@ a{
     color: var(--black);
 }
 
-a:link{
+a:link, button:link{
     color: var(--black);
     text-decoration: none;
 }
