@@ -722,7 +722,13 @@ main h1{
     }
     
     .footerList, .footer-form{
-        gap: inherit;
+        gap: 2rem;
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+    }
+
+    .footerList{
+        outline: 2px solid red;
     }
   }
   
@@ -741,7 +747,6 @@ main h1{
     .footerList, .footer-form{
         gap: inherit;
     }
-
   }
 
 #logo-footer{
