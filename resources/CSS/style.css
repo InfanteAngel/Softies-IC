@@ -54,8 +54,22 @@
 
 }
 
+a:link, button:link{
+    color: var(--black);
+    text-decoration: none;
+}
+
+button{
+    color: var(--black);
+}
+
+a{
+    color: var(--black);
+}
 
 /* Box sizing rules */
+
+
 *,
 *::before,
 *::after {
@@ -1534,13 +1548,6 @@ a{
     color: var(--black);
 }
 
-a:link, button:link{
-    color: var(--black);
-    text-decoration: none;
-}
-
-
-
 
 
 
@@ -2042,3 +2049,6 @@ a:link, button:link{
 
 }
 
+*{
+    color: var(--black);
+}
